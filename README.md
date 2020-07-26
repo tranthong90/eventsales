@@ -5,6 +5,7 @@ This is a system that allows for users to apply discount to events
 ## Getting Started
 
 Live demo: https://eventsales.azurewebsites.net/
+
 The repository lives here: <https://github.com/tranthong90/eventsales>
 
 Clone the repository
@@ -30,7 +31,11 @@ Right now, I can see we have 2 type of discounts:
 1. Group Discount (Buy x number of events for this y amount)
 2. Next Item Percentage discount (Buy x number of events, the next will get y % discount)
 
+For example, Buy 4 only pay for 3 mean if customer buy 3 events, they will get 100% discount on the 4th items.
+
 So I build an abstract class called "BaseDiscount" and have 2 children GroupDiscount and NextItemDiscount which each has thier own way of calculate the discount amount.
+In the future, if we decide to have more discount type, we can add another implementation to the BaseDiscount class.
+Or if it fall into those 2 existing types, we can just add more records in the master Data file (Data.json).
 
 I also have a UnitTest project to check my calculation.
 
