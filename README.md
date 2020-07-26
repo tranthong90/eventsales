@@ -14,6 +14,15 @@ Clone the repository
 git clone https://github.com/tranthong90/eventsales
 ```
 
+### Platform
+
+ASP.NET Core 3.1
+
+### Host
+
+Microsoft Azure
+
+
 ### Prerequisites
 
 * NetCore 3.1:         <https://dotnet.microsoft.com/download>
