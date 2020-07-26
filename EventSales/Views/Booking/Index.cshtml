@@ -1,0 +1,37 @@
+﻿@model EventSales.Models.BookingIndexModel
+@using System.Globalization
+
+<div class="row checkoutForm" style="margin-bottom:250px;">
+    <div style="background-color:rgba(248,248,248,0.6);">
+        <h2>
+            Your shopping cart
+            <br />Here are the events in your shopping cart.
+        </h2>
+    </div>
+    <table class="table table-hover table-dark table-stripped table-bordered">
+        <thead>
+            <tr>
+                <th>Selected amount</th>
+                <th>Event</th>
+                <th class="text-right">Price</th>
+                <th class="text-right">Total</th>
+            </tr>
+        </thead>
+        <tbody>
+           
+                <tr>
+                    <td class="text-center">@Model.Amount</td>
+                    <td class="text-left">@Model.Event.Name</td>
+                    <td class="text-right">@Model.Event.Price.ToString("c", CultureInfo.CreateSpecificCulture("en-US"))</td>
+                    <td class="text-right">
+                        @Model.Event.CalculateAmount(Model.Amount).ToString("c", CultureInfo.CreateSpecificCulture("en-US"))
+                    </td>
+                   
+                </tr>
+            
+        </tbody>
+     
+    </table>
+  
+</div>
+

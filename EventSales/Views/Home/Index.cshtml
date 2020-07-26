@@ -1,0 +1,29 @@
+﻿@model EventSales.Models.HomeIndexModel
+
+<div class="container body-content">
+    <div class="row frontPageSplash">
+        <div class="col-md-6 frontPageLearn">
+            <div class="frontPageHeading">EventSales</div>
+            <p class="frontPageSubHeading">This is a markplace for events</p>
+        </div>
+        <div class="col-md-6"></div>
+    </div>
+    <div class="row frontPageContent">
+        <h3 id="latestFoods">What we are offering</h3>
+       
+            <table class="table table-hover" id="latestFoodsTable">
+                <tbody>
+                    @foreach (var e in Model.EventList)
+                    {
+                        <tr>
+                            <td>
+                                @Html.Partial("EventSummary", e)
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+
+
+    </div>
+</div>

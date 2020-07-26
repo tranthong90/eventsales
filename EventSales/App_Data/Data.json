@@ -1,0 +1,78 @@
+﻿{
+  "Events": [
+    {
+      "Id": 1,
+      "Name": "Team Buildings",
+      "Price": 800,
+      "ShortDescription": "Events for companies",
+      "Discounts": [
+        {
+          "Name": "Buy 2 for $1500",
+          "Description": "Buy 2 for $1500",
+          "NumberHaveToBuy": 2,
+          "DiscountedAmount": 1500
+        },
+        {
+          "Name": "Buy 5 Get 20%",
+          "Description": "Buy 5, Get 20% off the 5th experience",
+          "NumberHaveToBuy": 4,
+          "DiscountPercent": 0.2
+        }
+      ]
+    },
+    {
+      "Id": 2,
+      "Name": "Kids Party",
+      "Price": 220,
+      "ShortDescription": "Events for kids",
+      "Discounts": [
+        {
+          "Name": "Buy 5 Get 20%",
+          "Description": "Buy 5, Get 20% off the 5th experience",
+          "NumberHaveToBuy": 4,
+          "DiscountPercent": 0.2
+        }
+      ]
+    },
+    {
+      "Id": 3,
+      "Name": "Wine Tour",
+      "Price": 440,
+      "ShortDescription": "Events for companies, couples",
+      "Discounts": [
+        {
+          "Name": "Buy 4 ONLY Pay for 3",
+          "Description": "Buy 4 ONLY Pay for 3",
+          "NumberHaveToBuy": 3,
+          "DiscountPercent": 1
+        },
+        {
+          "Name": "Buy 5 Get 20%",
+          "Description": "Buy 5, Get 20% off the 5th experience",
+          "NumberHaveToBuy": 4,
+          "DiscountPercent": 0.2
+        }
+      ]
+    },
+    {
+      "Id": 4,
+      "Name": "Picnic",
+      "Price": 110,
+      "ShortDescription": "Events for couples",
+      "Discounts": [
+        {
+          "Name": "Buy 2 get 1 free",
+          "Description": "Buy 2 get 1 free",
+          "NumberHaveToBuy": 2,
+          "DiscountPercent": 1
+        },
+        {
+          "Name": "Buy 5 Get 20%",
+          "Description": "Buy 5, Get 20% off the 5th experience",
+          "NumberHaveToBuy": 4,
+          "DiscountPercent": 0.2
+        }
+      ]
+    }
+  ]
+}
